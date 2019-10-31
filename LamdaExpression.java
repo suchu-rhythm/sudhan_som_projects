@@ -1,7 +1,7 @@
 package com.codewithme;
 
 interface A1{
-     void show();
+     void show(int j);
 }
 /*
 class B extends A1{
@@ -15,8 +15,8 @@ class B extends A1{
 class LamdaExpression{
     public static void main(String args[]){
 
-        A1 obj = ()-> System.out.println("display something In Class B...");
-        obj.show();
+        A1 obj = (int j )-> System.out.println("display something In Class B... "+j);
+        obj.show(7);
 
     }
 }
